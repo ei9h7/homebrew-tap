@@ -1,4 +1,4 @@
-# HashiCorp Homebrew Tap
+# 8's Homebrew Tap
 
 ## What is Homebrew?
 
@@ -14,24 +14,24 @@ See more at https://docs.brew.sh/Taps
 ## How do I install packages from here?
 
 ```sh
-brew install hashicorp/tap/name
+brew install ei9h7/tap/package-name
 ```
 
 You can also only add the tap which makes formulae within it
 available in search results (`brew search` output):
 
 ```sh
-brew tap hashicorp/tap
+brew tap ei9h7/tap
 ```
 
 Note: to clone the tap via SSH you will need to use:
 
 ```sh
-brew tap hashicorp/tap https://github.com/hashicorp/homebrew-tap
+brew tap ei9h7/tap https://github.com/ei9h7/homebrew-tap
 ```
 
 While you may search across taps, it is necessary to always use
-fully qualified name (incl. the `hashicorp/tap/` prefix)
+fully qualified name (incl. the `ei9h7/tap/` prefix)
 when refering to formulae in external taps such as this one
 outside of search.
 
@@ -40,39 +40,13 @@ outside of search.
 With the following commands, you can install the latest version of each product:
 ```sh
 # Formulae
-brew install hashicorp/tap/boundary
-brew install hashicorp/tap/consul
-brew install hashicorp/tap/nomad
-brew install hashicorp/tap/packer
-brew install hashicorp/tap/sentinel
-brew install hashicorp/tap/terraform
-brew install hashicorp/tap/vault
-brew install hashicorp/tap/waypoint
+brew install ei9h7/tap/command-pad
+brew install ei9h7/tap/xxx
 
 # Casks
-brew install hashicorp-boundary-desktop
-
-brew install vagrant
+brew install xxx
 ```
-* Note: Vagrant is available as a cask from Homebrew core and not provided by this tap.
 
-## Why should I install packages from this tap?
+### Why doesn't ei9h7 maintain formulae in the `homebrew-core` (main tap)?
 
-Formulae for the same HashiCorp software may exist in other taps
-or the [community-maintained main tap](https://github.com/Homebrew/homebrew-core).
-This may raise a question of why would someone prefer one tap over the other.
-
-The _community-maintained tap_ compiles HashiCorp software on Homebrew's own infrastructure, and builds it according to the local formulae definition.
-
-Formulae _in this tap_ are maintained by HashiCorp, which means that it distributes
-the exact (byte-to-byte) same binaries which are published to https://releases.hashicorp.com
-
- - macOS binaries are signed by HashiCorp and the signature can be verified
-	per instructions on the [HashiCorp's Security](https://www.hashicorp.com/security#code-signature-verification) page
- - Teams maintaining HashiCorp software choose Go version and any build flags _deliberately_ while
- 	factoring in support, security and other concerns. Binaries distributed through this tap reflect this.
- - Updating of formulae is automated, which means that updates become available as they're released.
-
-### Why doesn't HashiCorp maintain formulae in the `homebrew-core` (main tap)?
-
-Homebrew's core team prefers to keep `homebrew-core` as community maintained and built from source to maintain consistency across vendors in terms of expectations around contents and updates. See [relevant discussion](https://discourse.brew.sh/t/maintenance-of-formulas-by-vendor/7649) for more information.
+Homebrew's core team prefers to keep `homebrew-core` as community maintained and built from source to maintain consistency across vendors in terms of expectations around contents and updates. See [relevant discussion](https://discourse.brew.sh/t/maintenance-of-formulas-by-vendor/7649) for more information. I created these formulas for applications and functions that weren't able to be accepted into the community maintained taps, however wanted to be able to managed the apps on my own through the amazing homebrew package manager.
