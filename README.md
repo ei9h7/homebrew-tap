@@ -40,7 +40,7 @@ outside of search.
 With the following commands, you can install the latest version of each product:
 ```sh
 # Formulae
-brew install ei9h7/tap/command-pad
+brew install ei9h7/tap/storj-uplink
 brew install ei9h7/tap/xxx
 
 # Casks
